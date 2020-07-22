@@ -1,0 +1,384 @@
+/** {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: red;
+}*/
+
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/*Шапка*/
+.header {
+  display: flex;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  border: 1px solid #f2f2f2;
+  position: relative;
+}
+
+/*Логотип*/
+.logo_plase_header {
+  width: 183px;
+  height: 32px;
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  z-index: 3;
+}
+
+/*Заголовок*/
+.header__title {
+  width: 730px;
+  display: flex;
+  align-self: center;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 700;
+  left: 64px;
+  padding-bottom: 15px;
+}
+
+/*Параграф*/
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  line-height: 25px;
+  font-size: 18px;
+  margin: 0;
+  left: 64px;
+  bottom: 30px;
+}
+
+/*Ссылка*/
+.header__link {
+  color: #2f80ed;
+}
+
+/*Двойка*/
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+/*Голубой квадрат*/
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  background-color: #2f80ed;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/*Блок Проблемы в обучении*/
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+/*Общий контейнер*/
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/*заголовок*/
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #2f80ed;
+}
+
+/*Контейнер для параграфов*/
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+/*Параграфы*/
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  margin: 0;
+}
+
+.two-columns__paragraph:nth-child(2) {
+  margin: 30px 0;
+}
+
+/*Полужирное слово в параграфе*/
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*Блок с карточками*/
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0 100px;
+}
+
+/*Заголовок h2*/
+.section-title {
+  margin: 0;
+  width: 60%;
+  text-align: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/*Заголовок h3*/
+.section-subtitle {
+  width: 60%;
+  margin: 20px auto 0 auto;
+  line-height: 34px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/*Блок для карточек*/
+.table {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+/*Карточка*/
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  list-style-type: none;
+}
+
+/*Заголовок карточки*/
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/*Абзац в карточке*/
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  margin: 20px 0 0 0;
+}
+
+/*контейнер Метод Фейнмана*/
+.feinman {
+  height: 790px;
+  position: relative;
+  margin: 0;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*заголовок контейнера*/
+.feinman__title {
+  width: 648px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
+}
+
+/*Абзац*/
+.feinman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 0;
+  margin-top: 70px;
+}
+
+/*Ссылка*/
+.feinman__link {
+  line-height: 51px;
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+}
+
+/*Изображение*/
+.feinman__headpiece {
+  background-image: url(../images/feynman.png);
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/*Контейнер с темными карточками*/
+.kaufman {
+  background-color: #1f1f1f;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: #f2f2f2;
+  padding: 90px 0;
+}
+
+/*заголовок кауфмана*/
+.section-title_theme_dark {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*подзаголовок кауфмана*/
+.section-subtitle_theme_dark {
+  font-weight: 700;
+}
+
+/*Бокс карточек dark*/
+.table_theme_dark {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  padding-inline-start: 0px;
+}
+
+/*Карточка dark*/
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-top: 80px;
+  list-style-type: none;
+}
+
+/*Голубой треугольник*/
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  box-sizing: 877px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: 1;
+}
+
+/*Подвал*/
+.footer {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  min-height: 350px;
+  display: flex;
+}
+
+/*Контейнер подвала*/
+.footer__columns {
+  width: 90%;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto 40px;
+  padding: 0;
+  align-self: stretch;
+}
+
+/*Первая колонка*/
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*Логотип*/
+.logo_place_footer {
+  background-image: url(..//images/logo_place_footer.svg);
+  width: 183px;
+  height: 32px;
+}
+
+/*Автор*/
+.footer__author {
+  align-self: flex-start;
+  line-height: 25px;
+  font-size: 18px;
+  padding: 18px 0 18px;
+}
+
+/*Заголовок второй колонки*/
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/*Список второй колонки*/
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  margin: 20px 0 16px 0;
+  padding: 0;
+}
+
+/*Пункт списка*/
+.footer__column-list {
+  list-style-type: none;
+}
+
+/*контейнер с иконкой и ссылкой*/
+.footer__social-icon {
+  line-height: 30px;
+  font-size: 18px;
+  margin: 20px 0 16px 0;
+  padding: 0;
+}
+
+/*Ссылка в списке*/
+.footer__link {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer__word {
+  margin-left: 10px;
+}
